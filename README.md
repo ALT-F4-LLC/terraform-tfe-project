@@ -3,6 +3,10 @@ Terraform module which creates Terraform Enterprise project resources.
 
 ## Migration Changes
 
+### 0.4.0
+
+- Replaced `project_name` output with `project_id` which is populated by provider
+
 ### 0.3.0
 
 - Added the `team_ids` to `variables.tf` which replaces `team_name` allowing for multiple teams to be added to projects
@@ -44,5 +48,5 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_name"></a> [name](#output\_name) | The name of the project |
+| <a name="output_id"></a> [id](#output\_id) | The ID of the project |
 <!-- END_TF_DOCS -->
