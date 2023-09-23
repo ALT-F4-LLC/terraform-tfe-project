@@ -1,6 +1,12 @@
 # terraform-tfe-project
 Terraform module which creates Terraform Enterprise project resources.
 
+## Migration Changes
+
+### 0.3.0
+
+- Added the `team_ids` to `variables.tf` which replaces `team_name` allowing for multiple teams to be added to projects
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
