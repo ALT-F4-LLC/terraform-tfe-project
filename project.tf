@@ -4,7 +4,9 @@ resource "tfe_project" "self" {
 }
 
 resource "tfe_team_project_access" "self" {
+  for_each = toset(var.team_ids)
+
   access     = "maintain"
   project_id = tfe_project.self.id
-  team_id    = data.tfe_team.self.id
+  team_id    = each.key
 }

@@ -13,7 +13,8 @@ variable "organization_name" {
   type        = string
 }
 
-variable "team_name" {
+variable "team_ids" {
+  default     = []
   description = "The name of the team"
-  type        = string
+  type        = list(string)
 }
