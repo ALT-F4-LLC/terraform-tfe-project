@@ -1,8 +1,12 @@
-terraform {
-  required_providers {
-    tfe = {
-      source  = "hashicorp/tfe"
-      version = "0.48.0"
-    }
-  }
+resource "tfe_project" "self" {
+  name         = var.name
+  organization = var.organization_name
+}
+
+resource "tfe_team_project_access" "self" {
+  count = length(var.team_ids)
+
+  access     = "maintain"
+  project_id = tfe_project.self.id
+  team_id    = var.team_ids[count.index]
 }
