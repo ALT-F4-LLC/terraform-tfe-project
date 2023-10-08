@@ -16,13 +16,13 @@ Terraform module which creates Terraform Enterprise project resources.
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | 0.48.0 |
+| <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | 0.49.2 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.48.0 |
+| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.49.2 |
 
 ## Modules
 
@@ -32,8 +32,8 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [tfe_project.self](https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/project) | resource |
-| [tfe_team_project_access.self](https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/team_project_access) | resource |
+| [tfe_project.self](https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/project) | resource |
+| [tfe_team_project_access.self](https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/team_project_access) | resource |
 
 ## Inputs
 
